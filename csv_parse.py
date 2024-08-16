@@ -18,7 +18,7 @@ with open("bns.csv", "r", encoding='latin1') as file:
         fieldnames = ['description','industry','level','size','line_code','value','status','Unit','Footnotes']
         csv_writer = csv.DictWriter(newfile, fieldnames=fieldnames, delimiter='\t')
         
-        #wwrite headers(optional)
+        #write headers(optional)
         csv_writer.writeheader()
         for line in csv_reader:
             csv_writer.writerow(line)
