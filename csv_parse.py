@@ -11,7 +11,7 @@ import csv
 
 with open("bns.csv", "r", encoding='latin1') as file:
     csv_reader = csv.DictReader(file)
-    #next(csv_reader) #generator to skip headers
+    #next(csv_reader) #generator to skip headers.
     
     #writing to a csv file
     with open("newname.csv", "w") as newfile:
